@@ -1,0 +1,15 @@
+<html>
+<body>
+<script src="sw4delta.js"></script>
+<script src="../saveSvgAsPng.js"></script>
+<!-- need to do a seperate favicon without whitespace -->
+<!-- this is intended to be an image/logo builder for devs, I am sure if we hire a graphic designer they will hate this -->
+<!-- sandbox for drawn logo -->
+<svg id="logoDrawn" width="400" height="400">
+    <script>
+        drawLogo("logoDrawn",0,0,'black', 'black', 'chartreuse', 'yellow', 'yellow', 'cyan', 'red', 'magenta', 'blue', 'grey');
+        saveSvgAsPng(document.getElementById("logoDrawn"), "sw4delta_32x32.png", {scale: 0.15});
+    </script>
+
+</body>
+</html>
